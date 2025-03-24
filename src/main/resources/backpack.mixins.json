@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "package": "com.github.flybird.backpack.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "target": "DEFAULT",
+  "minVersion": "0.8.3",
+  "mixins": [
+    "ClientPlayerMixin",
+    "EntityClientPlayerMPMixin",
+    "EntityItemMixin",
+    "InventoryPlayerMixin",
+    "ItemBlockMixin",
+    "ItemRendererMixin",
+    "MinecraftMixin",
+    "RenderBlocksMixin",
+    "RenderItemMixin",
+    "RenderPlayerMixin",
+    "ServerPlayerMixin",
+    "SlotArmorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

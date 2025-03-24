@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "backpack",
+	"version": "${version}",
+	"depends": {
+		"fishmodloader": ">=3.4.1",
+		"rusted_iron_core": ">=1.3.7"
+	},
+	"suggests": {
+		"baubles": ">=1.0.9"
+	},
+	"environment": "*",
+	"name": "Backpack",
+	"description": "",
+	"authors": [
+		"FlyBird"
+	],
+	"entrypoints": {
+		"main": [
+			"com.github.flybird.backpack.BPModInit"
+		],
+		"registry": [
+			"com.github.flybird.backpack.BPRegistryInit"
+		],
+		"baubles": [
+			"com.github.flybird.backpack.compat.BaubleImpl"
+		]
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/RenderBlocks": [
+				"com/github/flybird/backpack/api/IRenderBlock"
+			],
+			"net/minecraft/EntityClientPlayerMP": [
+				"com/github/flybird/backpack/api/IEntityClientPlayerMP"
+			],
+			"net/minecraft/ServerPlayer": [
+				"com/github/flybird/backpack/api/IServerPlayer"
+			]
+		}
+	},
+	"mixins": [
+		"backpack.mixins.json"
+	],
+	"accessWidener": "backpack.accesswidener"
+}
