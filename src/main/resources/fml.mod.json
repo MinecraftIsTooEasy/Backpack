@@ -6,8 +6,8 @@
 		"fishmodloader": ">=3.4.1",
 		"rusted_iron_core": ">=1.3.7"
 	},
-	"suggests": {
-		"baubles": ">=1.1.2"
+	"breaks": {
+		"baubles": "<=1.1.2"
 	},
 	"environment": "*",
 	"name": "Backpack",
