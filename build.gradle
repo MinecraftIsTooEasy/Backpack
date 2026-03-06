@@ -34,8 +34,10 @@ dependencies {
     implementation "com.github.MinecraftIsTooEasy:RustedIronCore:1.5.0:sources"
 
     implementation "com.github.MinecraftIsTooEasy:Baubles:1.1.2"
-    implementation "com.github.MinecraftIsTooEasy:OMMC:1.4.2"
     implementation "com.github.MinecraftIsTooEasy:BetterTips:1.4.0"
+    implementation "com.github.MinecraftIsTooEasy:CarryOn:1.0.1"
+    implementation "com.github.MinecraftIsTooEasy:OffHand:3.0.2"
+    implementation "com.github.MinecraftIsTooEasy:OMMC:1.4.2"
 
     implementation "com.github.MinecraftIsTooEasy:Gson:2.10.1"
     implementation "com.github.MinecraftIsTooEasy:FastUtil:8.5.12"
