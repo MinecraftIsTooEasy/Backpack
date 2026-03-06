@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class BPModInit implements ModInitializer {
     public static boolean HAS_BAUBLES;
-    public static String NAMESPACE = "Backpack";
+    public static String NAMESPACE = "backpack";
     public static final Logger logger = Logger.getLogger("BackpackMod");
 
     public void onInitialize() {

@@ -37,8 +37,9 @@ public class BlockBackpack extends BlockDirectionalWithTileEntity {
     public static final int backpackRenderType = IdUtil.getNextRenderType();
     private Icon icon;
 
+    @Override
     public void registerIcons(IconRegister par1IconRegister) {
-        this.icon = par1IconRegister.registerIcon("texture");
+        this.icon = par1IconRegister.registerIcon("backpack:backpack");
     }
 
     public BlockBackpack(int blockID) {
@@ -46,6 +47,11 @@ public class BlockBackpack extends BlockDirectionalWithTileEntity {
         setMaxStackSize(1);
         setStepSound(soundClothFootstep);
         setTickRandomly(true);
+    }
+
+    @Override
+    public Icon getIcon(int par1, int par2) {
+        return this.icon;
     }
 
     public void setBlockBoundsBasedOnStateAndNeighbors(IBlockAccess par1IBlockAccess, int x, int y, int z) {
