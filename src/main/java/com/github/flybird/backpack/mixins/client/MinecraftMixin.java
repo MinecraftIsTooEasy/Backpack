@@ -1,8 +1,6 @@
-package com.github.flybird.backpack.mixins;
+package com.github.flybird.backpack.mixins.client;
 
 import com.github.flybird.backpack.BPEvents;
-import com.github.flybird.backpack.BPModInit;
-import com.github.flybird.backpack.BPRegistryInit;
 import com.github.flybird.backpack.api.IEntityClientPlayerMP;
 import com.github.flybird.backpack.network.C2SBackpackGui;
 import moddedmite.rustedironcore.network.Network;

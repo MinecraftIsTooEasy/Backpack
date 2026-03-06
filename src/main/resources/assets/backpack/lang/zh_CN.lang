@@ -2,3 +2,5 @@ container.backpack=背包
 key.openBackpack=打开背包
 tile.backpack.name=背包
 itemGroup.backpack=背包模组
+
+item.backpack.single_hint=仅允许携带一个背包

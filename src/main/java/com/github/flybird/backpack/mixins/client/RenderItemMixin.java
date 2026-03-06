@@ -1,9 +1,7 @@
-package com.github.flybird.backpack.mixins;
+package com.github.flybird.backpack.mixins.client;
 
 import com.github.flybird.backpack.api.EnumItemRenderType;
 import com.github.flybird.backpack.api.IRenderBlock;
-import com.llamalad7.mixinextras.sugar.Local;
-import net.minecraft.Block;
 import net.minecraft.EntityItem;
 import net.minecraft.FontRenderer;
 import net.minecraft.ItemStack;

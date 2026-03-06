@@ -2,3 +2,5 @@ container.backpack=Backpack
 key.openBackpack=Open Backpack
 tile.backpack.name=Backpack
 itemGroup.backpack=Backpack Mod
+
+item.backpack.single_hint=Only one backpack is allowed at a time.

@@ -1,4 +1,4 @@
-package com.github.flybird.backpack.mixins;
+package com.github.flybird.backpack.mixins.client;
 
 import com.github.flybird.backpack.api.IEntityClientPlayerMP;
 import net.minecraft.EntityClientPlayerMP;
