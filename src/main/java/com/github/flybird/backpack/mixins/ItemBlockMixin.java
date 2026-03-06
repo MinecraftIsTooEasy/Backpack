@@ -36,4 +36,13 @@ public class ItemBlockMixin {
             }
         }
     }
+
+    @Inject(method = "getHeatLevel", at = @At("HEAD"), cancellable = true)
+    private void onGetHeatLevel(ItemStack item_stack, CallbackInfoReturnable<Integer> cir) {
+        if (item_stack != null && item_stack.getItem() instanceof ItemBlock) {
+            if (item_stack.getItem().itemID == BPRegistryInit.backpack.blockID || ((ItemBlock)item_stack.getItem()).getBlock() == BPRegistryInit.backpack) {
+                cir.setReturnValue(0);
+            }
+        }
+    }
 }
