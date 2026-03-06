@@ -5,6 +5,7 @@
   "target": "DEFAULT",
   "minVersion": "0.8.3",
   "mixins": [
+    "ContainerMixin",
     "ClientPlayerMixin",
     "EntityClientPlayerMPMixin",
     "EntityItemMixin",
@@ -16,7 +17,8 @@
     "RenderItemMixin",
     "RenderPlayerMixin",
     "ServerPlayerMixin",
-    "SlotArmorMixin"
+    "SlotArmorMixin",
+    "SlotMixin"
   ],
   "injectors": {
     "defaultRequire": 1

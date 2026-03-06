@@ -1,5 +1,6 @@
 package com.github.flybird.backpack.network;
 
+import baubles.api.BaubleSlotHelper;
 import baubles.api.BaublesApi;
 import com.github.flybird.backpack.BPModInit;
 import com.github.flybird.backpack.BPRegistryInit;
@@ -13,6 +14,7 @@ import net.minecraft.ItemStack;
 import net.minecraft.ResourceLocation;
 
 public class C2SBackpackGui implements Packet {
+
     private boolean isOpenBackpacked;
 
     public C2SBackpackGui(PacketByteBuf packetByteBuf) {
@@ -33,7 +35,12 @@ public class C2SBackpackGui implements Packet {
             if (itemStack == null) {
                 if (BPModInit.HAS_BAUBLES) {
                     IInventory baublesInventory = BaublesApi.getBaubles(entityPlayer);
-                    itemStack = baublesInventory.getStackInSlot(3);
+                    if (baublesInventory != null) {
+                        ItemStack back = baublesInventory.getStackInSlot(BaubleSlotHelper.BACK_SLOT);
+                        if (back != null && back.itemID == BPRegistryInit.backpack.blockID) {
+                            itemStack = back;
+                        }
+                    }
                 }
                 if (itemStack == null) {
                     itemStack = getArmorSlotBackpack(entityPlayer);

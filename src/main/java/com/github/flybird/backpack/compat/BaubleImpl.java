@@ -11,7 +11,7 @@ import net.minecraft.ItemStack;
 
 public class BaubleImpl implements IBaublePlugin {
     public boolean canPutBaubleSlot(ItemStack itemStack, BaubleType baubleType) {
-        return itemStack.getItem().itemID == BPRegistryInit.backpack.blockID && baubleType == BaubleType.BELT;
+        return itemStack.getItem().itemID == BPRegistryInit.backpack.blockID && baubleType == BaubleType.BACK;
     }
 
     public void onWornTick(ItemStack itemStack, EntityLivingBase entityLivingBase) {
